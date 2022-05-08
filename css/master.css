@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/paisaje.jpg) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.formulario {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 25%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 50px;
+  opacity: .7;
+  transition: .5s;
+}
+
+.formulario:hover, .formulario-registro:hover{
+  opacity: 1;
+  transition: .5s;
+  border:0px solid white;
+}
+
+.formulario .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.formulario-registro .logo-registro{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+.formulario h1, .formulario-registro h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.formulario label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.formulario-registro label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.formulario input, .formulario-registro input  {
+  width: 100%;
+  margin-bottom: 20px;
+  border-color: white;
+}
+
+.formulario input[type="email"], .formulario input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+}
+
+.formulario-registro input[type="text"], .formulario-registro input[type="date"], .formulario-registro input[type="number"], .formulario-registro input[type="email"] ,.formulario-registro input[type="password"], .formulario-registro input[type="file"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.formulario .btn-submit, .formulario-registro .btn-submit {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fff;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: .7s;
+}
+
+.formulario .btn-submit:hover, .formulario-registro .btn-submit:hover {
+  cursor: pointer;
+  background: #ce0b0b;
+  color: #fff;
+  transition: .7s;
+  opacity: 1;
+}
+
+.formulario a, .formulario-registro a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: white;
+}
+
+.formulario a:hover {
+  color: darkgrey;
+}
+
+.formulario input[type="email"]:focus:invalid,
+.formulario-registro input[type="password"]:focus:invalid,
+.formulario-registro input[type="file"]:focus:invalid,
+.formulario-registro input[type="number"]:focus:invalid,
+.formulario-registro input[type="email"]:focus:invalid, 
+.formulario-registro input[type="text"]:focus:invalid{
+  color:#d41a1a;
+  border-bottom-color: #d41a1a;
+}
+
+.formulario-registro input[type="email"]:focus,
+.formulario-registro input[type="password"]:focus,
+.formulario-registro input[type="file"]:focus,
+.formulario-registro input[type="number"]:focus,
+.formulario-registro input[type="email"]:focus, 
+.formulario-registro input[type="text"]:focus{
+  color:white;
+  border-color: white;
+}
+
+.formulario-registro input[type="email"]:focus:valid, 
+.formulario-registro input[type="text"]:focus:valid, 
+.formulario-registro input[type="number"]:focus:valid, 
+.formulario-registro input[type="file"]:focus:valid {
+  color:#069c38;
+  border-bottom-color: #069c38;
+}
+
+
+
+.formulario-registro{
+  width: 400px;
+  height: 770px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 75%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 50px;
+  opacity: .7;
+  transition: .9s;
+}
+
+.formulario-registro a:hover {
+  color: darkgrey;
+}
+select{
+  background-color: transparent;
+  color:white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+option{
+  color:black;
+}

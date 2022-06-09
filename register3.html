@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <div class="formulario-registro">
+        <img src="./img/icono-android-empresa.png" class="logo-registro">
+        <form method="GET" action="index.html">
+            <h1>Registro</h1>
+            <label for="nombres">Nombres completos:</label>
+            <input class="input-transparent" type="text" id="nombres" name="nombres" minlength="3" placeholder="Ingrese sus nombres" autocomplete="off" autofocus required>
+            <label for="apellidos">Apellidos completos:</label>
+            <input class="input-transparent" type="text" id="apellidos" name="apellidos" minlength="3" placeholder="Ingrese sus apellidos" autocomplete="off" required>
+            
+                <select name="tipo_documento" required>
+                    <option value="1">DNI</option>
+                    <option value="2">Pasaporte</option>
+                    <option value="3">Carnet de extranjeria</option>
+                </select>
+            
+            <input class="input-transparent" type="number" max="99999999" id="dni" name="dni" placeholder="Ingrese numero del documento" autocomplete="off" required>
+            <label for="username">Email</label>
+            <input class="input-transparent" type="email" name="email" placeholder="Enter email" autocomplete="off" autofocus required>
+            <label for="password">Password</label>
+            <input class="input-transparent" type="password" placeholder="Enter Password" autocomplete="off" required>
+            <label for="password">Fecha de Nacimiento</label>
+            <input class="input-transparent" type="date" autocomplete="off" required>
+            <label for="password">Foto</label>
+            <input class="input-transparent" type="file" required>
+            <button class="btn btn-danger" type="submit" class="btn-submit">Registrar</button>
+            
+            <a href="index.html">Ya tienes una cuenta?</a>
+        </form>
+    </div>
+</body>
+</html>

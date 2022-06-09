@@ -4,17 +4,23 @@
     <meta charset="utf-8">
     <title>Login </title>
     <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Venta de productos tecnologicos, smarth home, smarth phone, accesorios, etc.">
+    <meta name="keywords" content="tienda, tienda tecnologica, celulares, smarth phone, smarth home,accesorios de celulares">
+    
   </head>
   <body>
-
     <div class="formulario">
-      <img src="./img/codigo-logo.png" class="logo">
-      <form>
-        <label for="username">Email</label>
-        <input type="email" name="email" placeholder="Enter email" autocomplete="off" autofocus>
-        <label for="password">Password</label>
-        <input type="password" name="contrasena" placeholder="Enter Password" autocomplete="off">
-        <button type="submit" class="btn-submit">Log In</button><br>
+      <img src="./img/icono-android-empresa.png" class="logo">
+      <form >
+        <label for="email">Correo Electronico</label>
+        <input class="input-transparent" type="email" name="email" id="email" placeholder="user@mail.com" autocomplete="off" autofocus>
+          <i class="fa fa-thin fa-envelope icono"></i>
+        <label for="contrasena">Contrase&ntilde;a</label>
+        <input class="input-transparent" type="password" name="contrasena" id="contrasena" placeholder="********" autocomplete="off">
+          <i class="fa fa-solid fa-lock icono"></i>
+        <button type="submit" class="btn btn-danger">Log In</button>
+        <i class="fa fas fa-regular fa-arrow-right-to-bracket btn-icono-left"></i>
         <a href="register.html">No tienes una cuenta?</a>
       </form>
     </div>

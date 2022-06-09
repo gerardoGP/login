@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: url(../img/paisaje.jpg) no-repeat center top;
+  /*background-color: rgb(224, 224, 224);*/
   background-size: cover;
   font-family: sans-serif;
   height: 100vh;
@@ -20,31 +21,22 @@ body {
   padding: 70px 30px;
   border-top-left-radius: 40px;
   border-bottom-right-radius: 50px;
-  opacity: .7;
+  opacity: .8;
   transition: .5s;
 }
-
 .formulario:hover, .formulario-registro:hover{
-  opacity: 1;
+  opacity: .9;
   transition: .5s;
   border:0px solid white;
 }
 
-.formulario .logo {
+.formulario .logo, .formulario-registro .logo-registro {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 60%;
   position: absolute;
-  top: -50px;
-  left: calc(50% - 50px);
-}
-
-.formulario-registro .logo-registro{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
+  z-index: -2;
+  top: -64px;
   left: calc(50% - 50px);
 }
 
@@ -75,18 +67,7 @@ body {
   border-color: white;
 }
 
-.formulario input[type="email"], .formulario input[type="password"] {
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color: #fff;
-  font-size: 16px;
-  width: 100%;
-}
-
-.formulario-registro input[type="text"], .formulario-registro input[type="date"], .formulario-registro input[type="number"], .formulario-registro input[type="email"] ,.formulario-registro input[type="password"], .formulario-registro input[type="file"] {
+.input-transparent {
   border: none;
   border-bottom: 1px solid #fff;
   background: transparent;
@@ -96,16 +77,26 @@ body {
   font-size: 16px;
 }
 
-.formulario .btn-submit, .formulario-registro .btn-submit {
+.btn {
   border: none;
   outline: none;
-  height: 40px;
-  background: #fff;
-  color: #000000;
-  font-size: 18px;
-  border-radius: 20px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 5px;
   width: 100%;
   margin-bottom: 20px;
+  transition: .7s;
+  cursor: pointer;
+}
+
+.btn-danger{
+  background-color:#a31010;
+  color:white;
+}
+
+.btn-danger:hover{
+  background-color:#6d0a0a;
+  color:white;
   transition: .7s;
 }
 
@@ -127,40 +118,27 @@ body {
 .formulario a:hover {
   color: darkgrey;
 }
+input:focus{
+  outline: none;
+  color:white;
+  border-bottom-color:white;
+}
 
-.formulario input[type="email"]:focus:invalid,
-.formulario-registro input[type="password"]:focus:invalid,
-.formulario-registro input[type="file"]:focus:invalid,
-.formulario-registro input[type="number"]:focus:invalid,
-.formulario-registro input[type="email"]:focus:invalid, 
-.formulario-registro input[type="text"]:focus:invalid{
+input:invalid:focus{
   color:#d41a1a;
   border-bottom-color: #d41a1a;
 }
 
-.formulario-registro input[type="email"]:focus,
-.formulario-registro input[type="password"]:focus,
-.formulario-registro input[type="file"]:focus,
-.formulario-registro input[type="number"]:focus,
-.formulario-registro input[type="email"]:focus, 
-.formulario-registro input[type="text"]:focus{
-  color:white;
-  border-color: white;
-}
-
-.formulario-registro input[type="email"]:focus:valid, 
-.formulario-registro input[type="text"]:focus:valid, 
-.formulario-registro input[type="number"]:focus:valid, 
-.formulario-registro input[type="file"]:focus:valid {
+input:valid:focus{
   color:#069c38;
   border-bottom-color: #069c38;
 }
 
-
-
 .formulario-registro{
-  width: 400px;
-  height: 770px;
+  width: auto;
+  padding-top: 20px;
+  padding-bottom: 2px;
+  height: auto;
   background: #000;
   color: #fff;
   top: 50%;
@@ -168,11 +146,11 @@ body {
   position: absolute;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
-  padding: 70px 30px;
+  padding: 20px 30px;
   border-top-left-radius: 40px;
   border-bottom-right-radius: 50px;
-  opacity: .7;
-  transition: .9s;
+  opacity: .8;
+  transition: .5s;
 }
 
 .formulario-registro a:hover {
@@ -187,4 +165,22 @@ select{
 }
 option{
   color:black;
+}
+
+.icono{
+  float: right;
+  margin-right: 6px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.btn-icono-left{
+  float: left;
+  margin-left: 82px;
+  margin-top: -45px;
+  position: relative;
+  z-index: 2;
+  color: white;
 }
